@@ -1,4 +1,12 @@
 export default function App() {
+    const toggleDarkMode = () => {
+        const htmlElement = document.documentElement;
+        if (htmlElement.classList.contains('dark')) {
+            htmlElement.classList.remove('dark');
+        } else {
+            htmlElement.classList.add('dark');
+        }
+    };
     return (
         <>
 
